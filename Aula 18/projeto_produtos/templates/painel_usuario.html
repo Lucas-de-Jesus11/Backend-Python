@@ -1,0 +1,19 @@
+<!-- painel usuario html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Usuário</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+        <h2>Painel do Usuário</h2>
+        <p>Bem-vindo, {{usuario.nome}} </p>
+        <a href="/me/dados">Meus dados</a>
+        <a href="/meus-pedidos">Meus Pedidos</a>
+    {% endblock %}
+</body>
+</html>

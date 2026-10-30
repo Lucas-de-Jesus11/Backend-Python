@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo usuário</title>
+</head>
+<body>
+    <h1>Editar usuário</h1>
+    <form action="/atualizar/{{usuario.id}}" method="post">
+        <label>Nome:</label><br>
+        <input type="text" name="nome" value="{{usuario.nome}}" required><br><br>
+        <label>Email:</label><br>
+        <input type="text" name="email" value="{{usuario.email}}" required><br><br>
+        <button type="submit">Atualizar</button>
+    </form>
+    <br>
+    <a href="/"> Voltar</a>
+</body>
+</html>
